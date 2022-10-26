@@ -1,0 +1,18 @@
+{
+    "ansible_net_full_commit_required": false,
+    "ansible_net_gather_subset": [
+        "system",
+        "session"
+    ],
+    "ansible_net_hostname": "pa-lab-edge1",
+    "ansible_net_kbps": "162",
+    "ansible_net_model": "PA-VM",
+    "ansible_net_multivsys": "off",
+    "ansible_net_pps": "88",
+    "ansible_net_serial": "007251000187003",
+    "ansible_net_session_max": "819200",
+    "ansible_net_session_usage": "10",
+    "ansible_net_uncommitted_changes": true,
+    "ansible_net_uptime": "117 days, 21:40:42",
+    "ansible_net_version": "10.1.2"
+}

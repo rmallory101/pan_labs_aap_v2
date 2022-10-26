@@ -1,0 +1,8 @@
+---
+collections:
+  - name: paloaltonetworks.panos
+    version: '*'
+    source: https://galaxy.ansible.com
+  - name: community.general
+    version: '*'
+    source: https://galaxy.ansible.com

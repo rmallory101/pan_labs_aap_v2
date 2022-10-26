@@ -1,0 +1,1 @@
+{"event": "verbose", "uuid": "80e7c6b6-e422-43f1-9ff8-c23f1bc0f770", "counter": 91, "stdout": "\u001b[0;35m[DEPRECATION WARNING]: Param \"commit\" is deprecated; use the various commit \u001b[0m", "start_line": 95, "end_line": 96, "runner_ident": "fa01b00b-6989-4020-b92a-4220b093105c", "created": "2022-10-25T14:26:50.089291"}

@@ -1,0 +1,18 @@
+[1;35m[WARNING]: Unable to parse /runner/inventory/hosts as an inventory source[0m
+[1;35m[WARNING]: No inventory was parsed, only implicit localhost is available[0m
+[1;35m[WARNING]: provided hosts list is empty, only localhost is available. Note that[0m
+[1;35mthe implicit localhost does not match 'all'[0m
+
+PLAY [localhost] ***************************************************************
+
+TASK [palo_backup_restore : include_tasks] *************************************
+[0;36mskipping: [localhost][0m
+
+TASK [palo_backup_restore : include_tasks] *************************************
+[0;36mincluded: /runner/project/roles/palo_backup_restore/tasks/restore_configuration.yml for localhost[0m
+
+TASK [palo_backup_restore : import configuration] ******************************
+[0;31mfatal: [localhost]: FAILED! => {"changed": false, "msg": "requests and requests_toolbelt are required for this module"}[0m
+
+PLAY RECAP *********************************************************************
+[0;31mlocalhost[0m                  : [0;32mok=1   [0m changed=0    unreachable=0    [0;31mfailed=1   [0m [0;36mskipped=1   [0m rescued=0    ignored=0   

@@ -1,0 +1,1 @@
+{"event": "verbose", "uuid": "8e1edb2c-4633-42b6-9d16-1af73068eb5a", "counter": 30, "stdout": "\u001b[0;35m[DEPRECATION WARNING]: Please use details instead of all_details. This feature \u001b[0m", "start_line": 41, "end_line": 42, "runner_ident": "fa01b00b-6989-4020-b92a-4220b093105c", "created": "2022-10-25T14:25:41.084119"}

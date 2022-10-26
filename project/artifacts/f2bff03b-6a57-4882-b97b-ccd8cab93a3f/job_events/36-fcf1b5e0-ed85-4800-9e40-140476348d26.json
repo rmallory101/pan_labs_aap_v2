@@ -1,0 +1,1 @@
+{"event": "verbose", "uuid": "fcf1b5e0-ed85-4800-9e40-140476348d26", "counter": 36, "stdout": "\u001b[0;35m[DEPRECATION WARNING]: Deprecated; use panos_zone with state=gathered instead. \u001b[0m", "start_line": 79, "end_line": 80, "runner_ident": "f2bff03b-6a57-4882-b97b-ccd8cab93a3f", "created": "2022-10-22T21:33:41.678853"}

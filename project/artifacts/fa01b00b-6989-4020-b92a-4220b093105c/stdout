@@ -1,0 +1,91 @@
+[1;35m[WARNING]: Unable to parse /runner/inventory/hosts as an inventory source[0m
+[1;35m[WARNING]: No inventory was parsed, only implicit localhost is available[0m
+[1;35m[WARNING]: provided hosts list is empty, only localhost is available. Note that[0m
+[1;35mthe implicit localhost does not match 'all'[0m
+
+PLAY [localhost] ***************************************************************
+
+TASK [include_role : palo_remove_address_object] *******************************
+
+TASK [palo_remove_address_object : include_tasks] ******************************
+[0;36mincluded: /runner/project/roles/palo_remove_address_object/tasks/remove_address.yml for localhost[0m
+
+TASK [palo_remove_address_object : Get all address groups and their config] ****
+[0;35m[DEPRECATION WARNING]: Deprecated; use object specific modules instead. This [0m
+[0;35mfeature will be removed from paloaltonetworks.panos in version 3.0.0. [0m
+[0;35mDeprecation warnings can be disabled by setting deprecation_warnings=False in [0m
+[0;35mansible.cfg.[0m
+[0;32mok: [localhost][0m
+
+TASK [palo_remove_address_object : Show Palo Alto Addresses] *******************
+[0;32mok: [localhost] => {[0m
+[0;32m    "msg": {[0m
+[0;32m        "ansible_module_results": {},[0m
+[0;32m        "changed": false,[0m
+[0;32m        "deprecations": [[0m
+[0;32m            {[0m
+[0;32m                "collection_name": "paloaltonetworks.panos",[0m
+[0;32m                "msg": "Deprecated; use object specific modules instead",[0m
+[0;32m                "version": "3.0.0"[0m
+[0;32m            }[0m
+[0;32m        ],[0m
+[0;32m        "failed": false,[0m
+[0;32m        "objects": [][0m
+[0;32m    }[0m
+[0;32m}[0m
+
+TASK [palo_remove_address_object : Get all Security Rules] *********************
+[0;35mwarnings can be disabled by setting deprecation_warnings=False in ansible.cfg.[0m
+[0;32mok: [localhost][0m
+
+TASK [palo_remove_address_object : Get All Security Rule Names - Before Changes] ***
+[0;32mok: [localhost] => (item={'source_user': ['any'], 'hip_profiles': None, 'application': ['web-browsing'], 'service': ['application-default'], 'category': ['any'], 'action': 'allow', 'log_setting': 'default', 'log_start': False, 'log_end': True, 'description': 'Allow Outbound HTTP', 'negate_source': False, 'negate_destination': False, 'disabled': False, 'schedule': None, 'icmp_unreachable': None, 'disable_server_response_inspection': False, 'negate_target': None, 'target': None, 'spyware': None, 'vulnerability': None, 'url_filtering': None, 'file_blocking': None, 'wildfire_analysis': None, 'data_filtering': None, 'uuid': 'c79e0dad-3127-45b7-a53e-0ea4d7fd7869', 'source_devices': ['any'], 'destination_devices': ['any'], 'group_tag': None, 'rule_name': 'Web Browsing Rule', 'source_zone': ['inside'], 'source_ip': ['inside_range'], 'destintaion_zone': ['outside'], 'destination_ip': ['any'], 'rule_type': 'universal', 'tag_name': None, 'group_profile': None, 'antivirus': None})[0m
+[0;32mok: [localhost] => (item={'source_user': ['any'], 'hip_profiles': None, 'application': ['ssl'], 'service': ['application-default'], 'category': ['any'], 'action': 'allow', 'log_setting': 'default', 'log_start': False, 'log_end': True, 'description': 'Allow Outbound SSL', 'negate_source': False, 'negate_destination': False, 'disabled': False, 'schedule': None, 'icmp_unreachable': None, 'disable_server_response_inspection': False, 'negate_target': None, 'target': None, 'spyware': None, 'vulnerability': None, 'url_filtering': None, 'file_blocking': None, 'wildfire_analysis': None, 'data_filtering': None, 'uuid': '557d4485-626a-4fe8-a686-8ef8f86fc966', 'source_devices': ['any'], 'destination_devices': ['any'], 'group_tag': None, 'rule_name': 'SSL Browsing Rule', 'source_zone': ['inside'], 'source_ip': ['inside_range'], 'destintaion_zone': ['outside'], 'destination_ip': ['any'], 'rule_type': 'universal', 'tag_name': None, 'group_profile': None, 'antivirus': None})[0m
+[0;32mok: [localhost] => (item={'source_user': ['any'], 'hip_profiles': None, 'application': ['ssh'], 'service': ['application-default'], 'category': ['any'], 'action': 'allow', 'log_setting': 'default', 'log_start': False, 'log_end': True, 'description': 'Allow Outbound SSH', 'negate_source': False, 'negate_destination': False, 'disabled': False, 'schedule': None, 'icmp_unreachable': None, 'disable_server_response_inspection': False, 'negate_target': None, 'target': None, 'spyware': None, 'vulnerability': None, 'url_filtering': None, 'file_blocking': None, 'wildfire_analysis': None, 'data_filtering': None, 'uuid': 'ce0f1e59-9551-44d9-b219-882c895962c5', 'source_devices': ['any'], 'destination_devices': ['any'], 'group_tag': None, 'rule_name': 'SSH Outbound_s3', 'source_zone': ['inside'], 'source_ip': ['server_3'], 'destintaion_zone': ['outside'], 'destination_ip': ['any'], 'rule_type': 'universal', 'tag_name': None, 'group_profile': None, 'antivirus': None})[0m
+[0;32mok: [localhost] => (item={'source_user': ['any'], 'hip_profiles': None, 'application': ['ssh'], 'service': ['application-default'], 'category': ['any'], 'action': 'allow', 'log_setting': 'default', 'log_start': False, 'log_end': True, 'description': 'Allow Outbound SSH', 'negate_source': False, 'negate_destination': False, 'disabled': False, 'schedule': None, 'icmp_unreachable': None, 'disable_server_response_inspection': False, 'negate_target': None, 'target': None, 'spyware': None, 'vulnerability': None, 'url_filtering': None, 'file_blocking': None, 'wildfire_analysis': None, 'data_filtering': None, 'uuid': 'bf18a12a-300b-4490-98c7-37b2be27a695', 'source_devices': ['any'], 'destination_devices': ['any'], 'group_tag': None, 'rule_name': 'SSH Outbound_s4', 'source_zone': ['inside'], 'source_ip': ['server_4'], 'destintaion_zone': ['outside'], 'destination_ip': ['any'], 'rule_type': 'universal', 'tag_name': None, 'group_profile': None, 'antivirus': None})[0m
+[0;32mok: [localhost] => (item={'source_user': ['any'], 'hip_profiles': None, 'application': ['ssh'], 'service': ['application-default'], 'category': ['any'], 'action': 'allow', 'log_setting': 'default', 'log_start': False, 'log_end': True, 'description': 'Allow Outbound SSH', 'negate_source': False, 'negate_destination': False, 'disabled': False, 'schedule': None, 'icmp_unreachable': None, 'disable_server_response_inspection': False, 'negate_target': None, 'target': None, 'spyware': None, 'vulnerability': None, 'url_filtering': None, 'file_blocking': None, 'wildfire_analysis': None, 'data_filtering': None, 'uuid': '638ea979-4ba5-4f6b-8b62-d26a1482f6b6', 'source_devices': ['any'], 'destination_devices': ['any'], 'group_tag': None, 'rule_name': 'SSH Outbound_s5', 'source_zone': ['inside'], 'source_ip': ['server_5'], 'destintaion_zone': ['outside'], 'destination_ip': ['any'], 'rule_type': 'universal', 'tag_name': None, 'group_profile': None, 'antivirus': None})[0m
+[0;32mok: [localhost] => (item={'source_user': ['any'], 'hip_profiles': None, 'application': ['ssh'], 'service': ['application-default'], 'category': ['any'], 'action': 'allow', 'log_setting': 'default', 'log_start': False, 'log_end': True, 'description': 'Allow Outbound SSH', 'negate_source': False, 'negate_destination': False, 'disabled': False, 'schedule': None, 'icmp_unreachable': None, 'disable_server_response_inspection': False, 'negate_target': None, 'target': None, 'spyware': None, 'vulnerability': None, 'url_filtering': None, 'file_blocking': None, 'wildfire_analysis': None, 'data_filtering': None, 'uuid': '030d3644-3e69-4958-ad42-adbf96813097', 'source_devices': ['any'], 'destination_devices': ['any'], 'group_tag': None, 'rule_name': 'SSH Outbound_s6', 'source_zone': ['inside'], 'source_ip': ['server_6'], 'destintaion_zone': ['outside'], 'destination_ip': ['any'], 'rule_type': 'universal', 'tag_name': None, 'group_profile': None, 'antivirus': None})[0m
+[0;32mok: [localhost] => (item={'source_user': ['any'], 'hip_profiles': None, 'application': ['any'], 'service': ['application-default'], 'category': ['any'], 'action': 'deny', 'log_setting': 'default', 'log_start': False, 'log_end': True, 'description': 'NOMOREANDTHEN', 'negate_source': False, 'negate_destination': False, 'disabled': False, 'schedule': None, 'icmp_unreachable': None, 'disable_server_response_inspection': False, 'negate_target': None, 'target': None, 'spyware': None, 'vulnerability': None, 'url_filtering': None, 'file_blocking': None, 'wildfire_analysis': None, 'data_filtering': None, 'uuid': '78dc034b-fab9-44e6-b30c-552eabb6fd04', 'source_devices': ['any'], 'destination_devices': ['any'], 'group_tag': None, 'rule_name': 'DENYALL', 'source_zone': ['inside'], 'source_ip': ['any'], 'destintaion_zone': ['outside'], 'destination_ip': ['any'], 'rule_type': 'universal', 'tag_name': None, 'group_profile': None, 'antivirus': None})[0m
+
+TASK [palo_remove_address_object : Get all NAT Rules from Firewall before Changes] ***
+[0;35mdeprecation_warnings=False in ansible.cfg.[0m
+[0;32mok: [localhost][0m
+
+TASK [palo_remove_address_object : Get All Rule Names - Before Changes] ********
+
+TASK [palo_remove_address_object : Remove address object from all groups] ******
+
+TASK [palo_remove_address_object : Remove Address Object from Security Rules] ***
+[0;36mskipping: [localhost] => (item=Web Browsing Rule) [0m
+[0;36mskipping: [localhost] => (item=SSL Browsing Rule) [0m
+[0;36mskipping: [localhost] => (item=SSH Outbound_s3) [0m
+[0;36mskipping: [localhost] => (item=SSH Outbound_s4) [0m
+[0;36mskipping: [localhost] => (item=SSH Outbound_s5) [0m
+[0;33mchanged: [localhost] => (item=SSH Outbound_s6)[0m
+[0;36mskipping: [localhost] => (item=DENYALL) [0m
+
+TASK [palo_remove_address_object : Remove Address Object from NAT Rules] *******
+
+TASK [palo_remove_address_object : Reread all Security Rules for Changes] ******
+[0;32mok: [localhost][0m
+
+TASK [palo_remove_address_object : Get all NAT Rules from Firewall after Changes] ***
+[0;32mok: [localhost][0m
+
+TASK [palo_remove_address_object : Disable NAT Rules with No Source or Destination Addresses] ***
+
+TASK [palo_remove_address_object : Disable Security Rules with No Source or Destination Addresses] ***
+[0;36mskipping: [localhost] => (item=Web Browsing Rule) [0m
+[0;36mskipping: [localhost] => (item=SSL Browsing Rule) [0m
+[0;36mskipping: [localhost] => (item=SSH Outbound_s3) [0m
+[0;36mskipping: [localhost] => (item=SSH Outbound_s4) [0m
+[0;36mskipping: [localhost] => (item=SSH Outbound_s5) [0m
+[0;33mchanged: [localhost] => (item=SSH Outbound_s6)[0m
+[0;36mskipping: [localhost] => (item=DENYALL) [0m
+
+TASK [palo_remove_address_object : Remove the Address Object] ******************
+[0;35mdeprecation_warnings=False in ansible.cfg.[0m
+[0;33mchanged: [localhost][0m
+
+PLAY RECAP *********************************************************************
+[0;33mlocalhost[0m                  : [0;32mok=11  [0m [0;33mchanged=3   [0m unreachable=0    failed=0    [0;36mskipped=4   [0m rescued=0    ignored=0   

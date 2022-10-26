@@ -1,0 +1,166 @@
+[1;35m[WARNING]: Unable to parse /runner/inventory/hosts as an inventory source[0m
+[1;35m[WARNING]: No inventory was parsed, only implicit localhost is available[0m
+[1;35m[WARNING]: provided hosts list is empty, only localhost is available. Note that[0m
+[1;35mthe implicit localhost does not match 'all'[0m
+
+PLAY [localhost] ***************************************************************
+
+TASK [include_role : add_rules_mass] *******************************************
+
+TASK [add_rules_mass : include_tasks] ******************************************
+[0;36mincluded: /runner/project/roles/add_rules_mass/tasks/palo_add_rules_mass.yml for localhost[0m
+
+TASK [add_rules_mass : Reading Firewall Rules from CSV] ************************
+[0;32mok: [localhost][0m
+
+TASK [add_rules_mass : debug] **************************************************
+[0;32mok: [localhost] => {[0m
+[0;32m    "rules": {[0m
+[0;32m        "changed": false,[0m
+[0;32m        "dict": {},[0m
+[0;32m        "failed": false,[0m
+[0;32m        "list": [[0m
+[0;32m            {[0m
+[0;32m                "application": "web-browsing",[0m
+[0;32m                "description": "Allow Outbound HTTP",[0m
+[0;32m                "destination_ip": "any",[0m
+[0;32m                "destination_name": "",[0m
+[0;32m                "destination_name_type": "",[0m
+[0;32m                "destination_zone": "outside",[0m
+[0;32m                "log_setting": "default",[0m
+[0;32m                "rule_name": "Web Browsing Rule",[0m
+[0;32m                "service": "application-default",[0m
+[0;32m                "source_ip": "172.31.128.0/18",[0m
+[0;32m                "source_name": "inside_range",[0m
+[0;32m                "source_name_type": "ip-netmask",[0m
+[0;32m                "source_zone": "inside"[0m
+[0;32m            },[0m
+[0;32m            {[0m
+[0;32m                "application": "ssl",[0m
+[0;32m                "description": "Allow Outbound SSL",[0m
+[0;32m                "destination_ip": "any",[0m
+[0;32m                "destination_name": "",[0m
+[0;32m                "destination_name_type": "",[0m
+[0;32m                "destination_zone": "outside",[0m
+[0;32m                "log_setting": "default",[0m
+[0;32m                "rule_name": "SSL Browsing Rule",[0m
+[0;32m                "service": "application-default",[0m
+[0;32m                "source_ip": "172.31.128.0/18",[0m
+[0;32m                "source_name": "inside_range",[0m
+[0;32m                "source_name_type": "ip-netmask",[0m
+[0;32m                "source_zone": "inside"[0m
+[0;32m            },[0m
+[0;32m            {[0m
+[0;32m                "application": "ssh",[0m
+[0;32m                "description": "Allow Outbound SSH",[0m
+[0;32m                "destination_ip": "any",[0m
+[0;32m                "destination_name": "",[0m
+[0;32m                "destination_name_type": "",[0m
+[0;32m                "destination_zone": "outside",[0m
+[0;32m                "log_setting": "default",[0m
+[0;32m                "rule_name": "SSH Outbound_s3",[0m
+[0;32m                "service": "application-default",[0m
+[0;32m                "source_ip": "172.31.128.10",[0m
+[0;32m                "source_name": "server_3",[0m
+[0;32m                "source_name_type": "ip-netmask",[0m
+[0;32m                "source_zone": "inside"[0m
+[0;32m            },[0m
+[0;32m            {[0m
+[0;32m                "application": "ssh",[0m
+[0;32m                "description": "Allow Outbound SSH",[0m
+[0;32m                "destination_ip": "any",[0m
+[0;32m                "destination_name": "",[0m
+[0;32m                "destination_name_type": "",[0m
+[0;32m                "destination_zone": "outside",[0m
+[0;32m                "log_setting": "default",[0m
+[0;32m                "rule_name": "SSH Outbound_s4",[0m
+[0;32m                "service": "application-default",[0m
+[0;32m                "source_ip": "172.31.128.11",[0m
+[0;32m                "source_name": "server_4",[0m
+[0;32m                "source_name_type": "ip-netmask",[0m
+[0;32m                "source_zone": "inside"[0m
+[0;32m            },[0m
+[0;32m            {[0m
+[0;32m                "application": "ssh",[0m
+[0;32m                "description": "Allow Outbound SSH",[0m
+[0;32m                "destination_ip": "any",[0m
+[0;32m                "destination_name": "",[0m
+[0;32m                "destination_name_type": "",[0m
+[0;32m                "destination_zone": "outside",[0m
+[0;32m                "log_setting": "default",[0m
+[0;32m                "rule_name": "SSH Outbound_s5",[0m
+[0;32m                "service": "application-default",[0m
+[0;32m                "source_ip": "172.31.128.12",[0m
+[0;32m                "source_name": "server_5",[0m
+[0;32m                "source_name_type": "ip-netmask",[0m
+[0;32m                "source_zone": "inside"[0m
+[0;32m            },[0m
+[0;32m            {[0m
+[0;32m                "application": "ssh",[0m
+[0;32m                "description": "Allow Outbound SSH",[0m
+[0;32m                "destination_ip": "any",[0m
+[0;32m                "destination_name": "",[0m
+[0;32m                "destination_name_type": "",[0m
+[0;32m                "destination_zone": "outside",[0m
+[0;32m                "log_setting": "default",[0m
+[0;32m                "rule_name": "SSH Outbound_s6",[0m
+[0;32m                "service": "application-default",[0m
+[0;32m                "source_ip": "172.31.128.13",[0m
+[0;32m                "source_name": "server_6",[0m
+[0;32m                "source_name_type": "ip-netmask",[0m
+[0;32m                "source_zone": "inside"[0m
+[0;32m            }[0m
+[0;32m        ][0m
+[0;32m    }[0m
+[0;32m}[0m
+
+TASK [add_rules_mass : Create Source Address Objects] **************************
+[0;33mchanged: [localhost] => (item={'rule_name': 'Web Browsing Rule', 'description': 'Allow Outbound HTTP', 'source_zone': 'inside', 'destination_zone': 'outside', 'source_name': 'inside_range', 'source_name_type': 'ip-netmask', 'source_ip': '172.31.128.0/18', 'destination_name': '', 'destination_name_type': '', 'destination_ip': 'any', 'application': 'web-browsing', 'service': 'application-default', 'log_setting': 'default'})[0m
+[0;32mok: [localhost] => (item={'rule_name': 'SSL Browsing Rule', 'description': 'Allow Outbound SSL', 'source_zone': 'inside', 'destination_zone': 'outside', 'source_name': 'inside_range', 'source_name_type': 'ip-netmask', 'source_ip': '172.31.128.0/18', 'destination_name': '', 'destination_name_type': '', 'destination_ip': 'any', 'application': 'ssl', 'service': 'application-default', 'log_setting': 'default'})[0m
+[0;33mchanged: [localhost] => (item={'rule_name': 'SSH Outbound_s3', 'description': 'Allow Outbound SSH', 'source_zone': 'inside', 'destination_zone': 'outside', 'source_name': 'server_3', 'source_name_type': 'ip-netmask', 'source_ip': '172.31.128.10', 'destination_name': '', 'destination_name_type': '', 'destination_ip': 'any', 'application': 'ssh', 'service': 'application-default', 'log_setting': 'default'})[0m
+[0;33mchanged: [localhost] => (item={'rule_name': 'SSH Outbound_s4', 'description': 'Allow Outbound SSH', 'source_zone': 'inside', 'destination_zone': 'outside', 'source_name': 'server_4', 'source_name_type': 'ip-netmask', 'source_ip': '172.31.128.11', 'destination_name': '', 'destination_name_type': '', 'destination_ip': 'any', 'application': 'ssh', 'service': 'application-default', 'log_setting': 'default'})[0m
+[0;33mchanged: [localhost] => (item={'rule_name': 'SSH Outbound_s5', 'description': 'Allow Outbound SSH', 'source_zone': 'inside', 'destination_zone': 'outside', 'source_name': 'server_5', 'source_name_type': 'ip-netmask', 'source_ip': '172.31.128.12', 'destination_name': '', 'destination_name_type': '', 'destination_ip': 'any', 'application': 'ssh', 'service': 'application-default', 'log_setting': 'default'})[0m
+[0;33mchanged: [localhost] => (item={'rule_name': 'SSH Outbound_s6', 'description': 'Allow Outbound SSH', 'source_zone': 'inside', 'destination_zone': 'outside', 'source_name': 'server_6', 'source_name_type': 'ip-netmask', 'source_ip': '172.31.128.13', 'destination_name': '', 'destination_name_type': '', 'destination_ip': 'any', 'application': 'ssh', 'service': 'application-default', 'log_setting': 'default'})[0m
+
+TASK [add_rules_mass : Create Destination Address Objects] *********************
+[0;36mskipping: [localhost] => (item={'rule_name': 'Web Browsing Rule', 'description': 'Allow Outbound HTTP', 'source_zone': 'inside', 'destination_zone': 'outside', 'source_name': 'inside_range', 'source_name_type': 'ip-netmask', 'source_ip': '172.31.128.0/18', 'destination_name': '', 'destination_name_type': '', 'destination_ip': 'any', 'application': 'web-browsing', 'service': 'application-default', 'log_setting': 'default'}) [0m
+[0;36mskipping: [localhost] => (item={'rule_name': 'SSL Browsing Rule', 'description': 'Allow Outbound SSL', 'source_zone': 'inside', 'destination_zone': 'outside', 'source_name': 'inside_range', 'source_name_type': 'ip-netmask', 'source_ip': '172.31.128.0/18', 'destination_name': '', 'destination_name_type': '', 'destination_ip': 'any', 'application': 'ssl', 'service': 'application-default', 'log_setting': 'default'}) [0m
+[0;36mskipping: [localhost] => (item={'rule_name': 'SSH Outbound_s3', 'description': 'Allow Outbound SSH', 'source_zone': 'inside', 'destination_zone': 'outside', 'source_name': 'server_3', 'source_name_type': 'ip-netmask', 'source_ip': '172.31.128.10', 'destination_name': '', 'destination_name_type': '', 'destination_ip': 'any', 'application': 'ssh', 'service': 'application-default', 'log_setting': 'default'}) [0m
+[0;36mskipping: [localhost] => (item={'rule_name': 'SSH Outbound_s4', 'description': 'Allow Outbound SSH', 'source_zone': 'inside', 'destination_zone': 'outside', 'source_name': 'server_4', 'source_name_type': 'ip-netmask', 'source_ip': '172.31.128.11', 'destination_name': '', 'destination_name_type': '', 'destination_ip': 'any', 'application': 'ssh', 'service': 'application-default', 'log_setting': 'default'}) [0m
+[0;36mskipping: [localhost] => (item={'rule_name': 'SSH Outbound_s5', 'description': 'Allow Outbound SSH', 'source_zone': 'inside', 'destination_zone': 'outside', 'source_name': 'server_5', 'source_name_type': 'ip-netmask', 'source_ip': '172.31.128.12', 'destination_name': '', 'destination_name_type': '', 'destination_ip': 'any', 'application': 'ssh', 'service': 'application-default', 'log_setting': 'default'}) [0m
+[0;36mskipping: [localhost] => (item={'rule_name': 'SSH Outbound_s6', 'description': 'Allow Outbound SSH', 'source_zone': 'inside', 'destination_zone': 'outside', 'source_name': 'server_6', 'source_name_type': 'ip-netmask', 'source_ip': '172.31.128.13', 'destination_name': '', 'destination_name_type': '', 'destination_ip': 'any', 'application': 'ssh', 'service': 'application-default', 'log_setting': 'default'}) [0m
+
+TASK [add_rules_mass : Add Firewall Security Rules with Source Name and Dest Name] ***
+[0;36mskipping: [localhost] => (item={'rule_name': 'Web Browsing Rule', 'description': 'Allow Outbound HTTP', 'source_zone': 'inside', 'destination_zone': 'outside', 'source_name': 'inside_range', 'source_name_type': 'ip-netmask', 'source_ip': '172.31.128.0/18', 'destination_name': '', 'destination_name_type': '', 'destination_ip': 'any', 'application': 'web-browsing', 'service': 'application-default', 'log_setting': 'default'}) [0m
+[0;36mskipping: [localhost] => (item={'rule_name': 'SSL Browsing Rule', 'description': 'Allow Outbound SSL', 'source_zone': 'inside', 'destination_zone': 'outside', 'source_name': 'inside_range', 'source_name_type': 'ip-netmask', 'source_ip': '172.31.128.0/18', 'destination_name': '', 'destination_name_type': '', 'destination_ip': 'any', 'application': 'ssl', 'service': 'application-default', 'log_setting': 'default'}) [0m
+[0;36mskipping: [localhost] => (item={'rule_name': 'SSH Outbound_s3', 'description': 'Allow Outbound SSH', 'source_zone': 'inside', 'destination_zone': 'outside', 'source_name': 'server_3', 'source_name_type': 'ip-netmask', 'source_ip': '172.31.128.10', 'destination_name': '', 'destination_name_type': '', 'destination_ip': 'any', 'application': 'ssh', 'service': 'application-default', 'log_setting': 'default'}) [0m
+[0;36mskipping: [localhost] => (item={'rule_name': 'SSH Outbound_s4', 'description': 'Allow Outbound SSH', 'source_zone': 'inside', 'destination_zone': 'outside', 'source_name': 'server_4', 'source_name_type': 'ip-netmask', 'source_ip': '172.31.128.11', 'destination_name': '', 'destination_name_type': '', 'destination_ip': 'any', 'application': 'ssh', 'service': 'application-default', 'log_setting': 'default'}) [0m
+[0;36mskipping: [localhost] => (item={'rule_name': 'SSH Outbound_s5', 'description': 'Allow Outbound SSH', 'source_zone': 'inside', 'destination_zone': 'outside', 'source_name': 'server_5', 'source_name_type': 'ip-netmask', 'source_ip': '172.31.128.12', 'destination_name': '', 'destination_name_type': '', 'destination_ip': 'any', 'application': 'ssh', 'service': 'application-default', 'log_setting': 'default'}) [0m
+[0;36mskipping: [localhost] => (item={'rule_name': 'SSH Outbound_s6', 'description': 'Allow Outbound SSH', 'source_zone': 'inside', 'destination_zone': 'outside', 'source_name': 'server_6', 'source_name_type': 'ip-netmask', 'source_ip': '172.31.128.13', 'destination_name': '', 'destination_name_type': '', 'destination_ip': 'any', 'application': 'ssh', 'service': 'application-default', 'log_setting': 'default'}) [0m
+
+TASK [add_rules_mass : Add Firewall Security Rules with No Source Name and No Destination Name] ***
+[0;36mskipping: [localhost] => (item={'rule_name': 'Web Browsing Rule', 'description': 'Allow Outbound HTTP', 'source_zone': 'inside', 'destination_zone': 'outside', 'source_name': 'inside_range', 'source_name_type': 'ip-netmask', 'source_ip': '172.31.128.0/18', 'destination_name': '', 'destination_name_type': '', 'destination_ip': 'any', 'application': 'web-browsing', 'service': 'application-default', 'log_setting': 'default'}) [0m
+[0;36mskipping: [localhost] => (item={'rule_name': 'SSL Browsing Rule', 'description': 'Allow Outbound SSL', 'source_zone': 'inside', 'destination_zone': 'outside', 'source_name': 'inside_range', 'source_name_type': 'ip-netmask', 'source_ip': '172.31.128.0/18', 'destination_name': '', 'destination_name_type': '', 'destination_ip': 'any', 'application': 'ssl', 'service': 'application-default', 'log_setting': 'default'}) [0m
+[0;36mskipping: [localhost] => (item={'rule_name': 'SSH Outbound_s3', 'description': 'Allow Outbound SSH', 'source_zone': 'inside', 'destination_zone': 'outside', 'source_name': 'server_3', 'source_name_type': 'ip-netmask', 'source_ip': '172.31.128.10', 'destination_name': '', 'destination_name_type': '', 'destination_ip': 'any', 'application': 'ssh', 'service': 'application-default', 'log_setting': 'default'}) [0m
+[0;36mskipping: [localhost] => (item={'rule_name': 'SSH Outbound_s4', 'description': 'Allow Outbound SSH', 'source_zone': 'inside', 'destination_zone': 'outside', 'source_name': 'server_4', 'source_name_type': 'ip-netmask', 'source_ip': '172.31.128.11', 'destination_name': '', 'destination_name_type': '', 'destination_ip': 'any', 'application': 'ssh', 'service': 'application-default', 'log_setting': 'default'}) [0m
+[0;36mskipping: [localhost] => (item={'rule_name': 'SSH Outbound_s5', 'description': 'Allow Outbound SSH', 'source_zone': 'inside', 'destination_zone': 'outside', 'source_name': 'server_5', 'source_name_type': 'ip-netmask', 'source_ip': '172.31.128.12', 'destination_name': '', 'destination_name_type': '', 'destination_ip': 'any', 'application': 'ssh', 'service': 'application-default', 'log_setting': 'default'}) [0m
+[0;36mskipping: [localhost] => (item={'rule_name': 'SSH Outbound_s6', 'description': 'Allow Outbound SSH', 'source_zone': 'inside', 'destination_zone': 'outside', 'source_name': 'server_6', 'source_name_type': 'ip-netmask', 'source_ip': '172.31.128.13', 'destination_name': '', 'destination_name_type': '', 'destination_ip': 'any', 'application': 'ssh', 'service': 'application-default', 'log_setting': 'default'}) [0m
+
+TASK [add_rules_mass : Add Firewall Security Rules with No Source Name and has Destination Name] ***
+[0;36mskipping: [localhost] => (item={'rule_name': 'Web Browsing Rule', 'description': 'Allow Outbound HTTP', 'source_zone': 'inside', 'destination_zone': 'outside', 'source_name': 'inside_range', 'source_name_type': 'ip-netmask', 'source_ip': '172.31.128.0/18', 'destination_name': '', 'destination_name_type': '', 'destination_ip': 'any', 'application': 'web-browsing', 'service': 'application-default', 'log_setting': 'default'}) [0m
+[0;36mskipping: [localhost] => (item={'rule_name': 'SSL Browsing Rule', 'description': 'Allow Outbound SSL', 'source_zone': 'inside', 'destination_zone': 'outside', 'source_name': 'inside_range', 'source_name_type': 'ip-netmask', 'source_ip': '172.31.128.0/18', 'destination_name': '', 'destination_name_type': '', 'destination_ip': 'any', 'application': 'ssl', 'service': 'application-default', 'log_setting': 'default'}) [0m
+[0;36mskipping: [localhost] => (item={'rule_name': 'SSH Outbound_s3', 'description': 'Allow Outbound SSH', 'source_zone': 'inside', 'destination_zone': 'outside', 'source_name': 'server_3', 'source_name_type': 'ip-netmask', 'source_ip': '172.31.128.10', 'destination_name': '', 'destination_name_type': '', 'destination_ip': 'any', 'application': 'ssh', 'service': 'application-default', 'log_setting': 'default'}) [0m
+[0;36mskipping: [localhost] => (item={'rule_name': 'SSH Outbound_s4', 'description': 'Allow Outbound SSH', 'source_zone': 'inside', 'destination_zone': 'outside', 'source_name': 'server_4', 'source_name_type': 'ip-netmask', 'source_ip': '172.31.128.11', 'destination_name': '', 'destination_name_type': '', 'destination_ip': 'any', 'application': 'ssh', 'service': 'application-default', 'log_setting': 'default'}) [0m
+[0;36mskipping: [localhost] => (item={'rule_name': 'SSH Outbound_s5', 'description': 'Allow Outbound SSH', 'source_zone': 'inside', 'destination_zone': 'outside', 'source_name': 'server_5', 'source_name_type': 'ip-netmask', 'source_ip': '172.31.128.12', 'destination_name': '', 'destination_name_type': '', 'destination_ip': 'any', 'application': 'ssh', 'service': 'application-default', 'log_setting': 'default'}) [0m
+[0;36mskipping: [localhost] => (item={'rule_name': 'SSH Outbound_s6', 'description': 'Allow Outbound SSH', 'source_zone': 'inside', 'destination_zone': 'outside', 'source_name': 'server_6', 'source_name_type': 'ip-netmask', 'source_ip': '172.31.128.13', 'destination_name': '', 'destination_name_type': '', 'destination_ip': 'any', 'application': 'ssh', 'service': 'application-default', 'log_setting': 'default'}) [0m
+
+TASK [add_rules_mass : Add Firewall Security Rules with Source Name and has no Destination Name] ***
+[0;33mchanged: [localhost] => (item={'rule_name': 'Web Browsing Rule', 'description': 'Allow Outbound HTTP', 'source_zone': 'inside', 'destination_zone': 'outside', 'source_name': 'inside_range', 'source_name_type': 'ip-netmask', 'source_ip': '172.31.128.0/18', 'destination_name': '', 'destination_name_type': '', 'destination_ip': 'any', 'application': 'web-browsing', 'service': 'application-default', 'log_setting': 'default'})[0m
+[0;33mchanged: [localhost] => (item={'rule_name': 'SSL Browsing Rule', 'description': 'Allow Outbound SSL', 'source_zone': 'inside', 'destination_zone': 'outside', 'source_name': 'inside_range', 'source_name_type': 'ip-netmask', 'source_ip': '172.31.128.0/18', 'destination_name': '', 'destination_name_type': '', 'destination_ip': 'any', 'application': 'ssl', 'service': 'application-default', 'log_setting': 'default'})[0m
+[0;33mchanged: [localhost] => (item={'rule_name': 'SSH Outbound_s3', 'description': 'Allow Outbound SSH', 'source_zone': 'inside', 'destination_zone': 'outside', 'source_name': 'server_3', 'source_name_type': 'ip-netmask', 'source_ip': '172.31.128.10', 'destination_name': '', 'destination_name_type': '', 'destination_ip': 'any', 'application': 'ssh', 'service': 'application-default', 'log_setting': 'default'})[0m
+[0;33mchanged: [localhost] => (item={'rule_name': 'SSH Outbound_s4', 'description': 'Allow Outbound SSH', 'source_zone': 'inside', 'destination_zone': 'outside', 'source_name': 'server_4', 'source_name_type': 'ip-netmask', 'source_ip': '172.31.128.11', 'destination_name': '', 'destination_name_type': '', 'destination_ip': 'any', 'application': 'ssh', 'service': 'application-default', 'log_setting': 'default'})[0m
+[0;33mchanged: [localhost] => (item={'rule_name': 'SSH Outbound_s5', 'description': 'Allow Outbound SSH', 'source_zone': 'inside', 'destination_zone': 'outside', 'source_name': 'server_5', 'source_name_type': 'ip-netmask', 'source_ip': '172.31.128.12', 'destination_name': '', 'destination_name_type': '', 'destination_ip': 'any', 'application': 'ssh', 'service': 'application-default', 'log_setting': 'default'})[0m
+[0;33mchanged: [localhost] => (item={'rule_name': 'SSH Outbound_s6', 'description': 'Allow Outbound SSH', 'source_zone': 'inside', 'destination_zone': 'outside', 'source_name': 'server_6', 'source_name_type': 'ip-netmask', 'source_ip': '172.31.128.13', 'destination_name': '', 'destination_name_type': '', 'destination_ip': 'any', 'application': 'ssh', 'service': 'application-default', 'log_setting': 'default'})[0m
+
+PLAY RECAP *********************************************************************
+[0;33mlocalhost[0m                  : [0;32mok=5   [0m [0;33mchanged=2   [0m unreachable=0    failed=0    [0;36mskipped=4   [0m rescued=0    ignored=0   

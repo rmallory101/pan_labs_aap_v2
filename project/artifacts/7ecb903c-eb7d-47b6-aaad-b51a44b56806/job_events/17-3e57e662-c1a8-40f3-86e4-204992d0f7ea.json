@@ -1,0 +1,1 @@
+{"event": "verbose", "uuid": "3e57e662-c1a8-40f3-86e4-204992d0f7ea", "counter": 17, "stdout": "\u001b[0;35mstate=gathered. This feature will be removed from paloaltonetworks.panos in \u001b[0m", "start_line": 14, "end_line": 15, "runner_ident": "7ecb903c-eb7d-47b6-aaad-b51a44b56806", "created": "2022-10-22T21:12:43.810031"}

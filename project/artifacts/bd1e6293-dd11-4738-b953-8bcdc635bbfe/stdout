@@ -1,0 +1,21 @@
+[1;35m[WARNING]: Unable to parse /runner/inventory/hosts as an inventory source[0m
+[1;35m[WARNING]: No inventory was parsed, only implicit localhost is available[0m
+[1;35m[WARNING]: provided hosts list is empty, only localhost is available. Note that[0m
+[1;35mthe implicit localhost does not match 'all'[0m
+
+PLAY [localhost] ***************************************************************
+
+TASK [include_role : palo_facts] ***********************************************
+
+TASK [palo_facts : include_tasks] **********************************************
+[0;36mincluded: /runner/project/roles/palo_facts/tasks/palo_vr_facts.yml for localhost[0m
+
+TASK [palo_facts : Get vr info] ************************************************
+[0;35m[DEPRECATION WARNING]: Deprecated; use panos_virtual_router with [0m
+[0;35mstate=gathered. This feature will be removed from paloaltonetworks.panos in [0m
+[0;35mversion 3.0.0. Deprecation warnings can be disabled by setting [0m
+[0;35mdeprecation_warnings=False in ansible.cfg.[0m
+[0;31mfatal: [localhost]: FAILED! => {"changed": false, "msg": "Failed connection: URLError: code: 403 reason: Invalid Credential"}[0m
+
+PLAY RECAP *********************************************************************
+[0;31mlocalhost[0m                  : [0;32mok=1   [0m changed=0    unreachable=0    [0;31mfailed=1   [0m skipped=0    rescued=0    ignored=0   
