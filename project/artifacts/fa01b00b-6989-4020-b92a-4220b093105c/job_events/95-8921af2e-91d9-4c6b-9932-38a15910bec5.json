@@ -1,1 +1,0 @@
-{"event": "verbose", "uuid": "8921af2e-91d9-4c6b-9932-38a15910bec5", "counter": 95, "stdout": "\u001b[0;35m[DEPRECATION WARNING]: Please use the commit modules instead of the commit \u001b[0m", "start_line": 99, "end_line": 100, "runner_ident": "fa01b00b-6989-4020-b92a-4220b093105c", "created": "2022-10-25T14:26:50.089291"}

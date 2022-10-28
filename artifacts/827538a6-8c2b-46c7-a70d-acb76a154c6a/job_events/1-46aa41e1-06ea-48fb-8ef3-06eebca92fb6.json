@@ -1,1 +1,0 @@
-{"event": "verbose", "uuid": "46aa41e1-06ea-48fb-8ef3-06eebca92fb6", "counter": 1, "stdout": "\u001b[0;31mERROR! the playbook: 1.7_palo_backup_restore_configuration.yml could not be found\u001b[0m", "start_line": 0, "end_line": 1, "runner_ident": "827538a6-8c2b-46c7-a70d-acb76a154c6a", "created": "2022-10-25T20:57:24.211477"}

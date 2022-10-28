@@ -1,1 +1,0 @@
-{"event": "verbose", "uuid": "7e6803c3-3f20-4e9e-b474-a47696b806ed", "counter": 38, "stdout": "\u001b[0;35mDeprecation warnings can be disabled by setting deprecation_warnings=False in \u001b[0m", "start_line": 244, "end_line": 245, "runner_ident": "16e543f0-dec0-44f4-aae0-e2ed729a27af", "created": "2022-10-22T21:14:48.298721"}

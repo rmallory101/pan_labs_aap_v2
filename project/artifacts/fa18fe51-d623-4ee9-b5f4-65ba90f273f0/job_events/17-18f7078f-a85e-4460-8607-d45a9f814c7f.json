@@ -1,1 +1,0 @@
-{"event": "verbose", "uuid": "18f7078f-a85e-4460-8607-d45a9f814c7f", "counter": 17, "stdout": "\u001b[0;35mfeature will be removed from paloaltonetworks.panos in version 3.0.0. \u001b[0m", "start_line": 14, "end_line": 15, "runner_ident": "fa18fe51-d623-4ee9-b5f4-65ba90f273f0", "created": "2022-10-25T14:07:06.788865"}

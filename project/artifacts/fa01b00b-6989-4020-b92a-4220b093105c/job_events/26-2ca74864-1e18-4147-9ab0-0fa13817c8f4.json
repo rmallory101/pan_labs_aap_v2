@@ -1,1 +1,0 @@
-{"event": "verbose", "uuid": "2ca74864-1e18-4147-9ab0-0fa13817c8f4", "counter": 26, "stdout": "\u001b[0;35m[DEPRECATION WARNING]: Deprecated; use panos_security_rule with state=gathered \u001b[0m", "start_line": 37, "end_line": 38, "runner_ident": "fa01b00b-6989-4020-b92a-4220b093105c", "created": "2022-10-25T14:25:41.084119"}

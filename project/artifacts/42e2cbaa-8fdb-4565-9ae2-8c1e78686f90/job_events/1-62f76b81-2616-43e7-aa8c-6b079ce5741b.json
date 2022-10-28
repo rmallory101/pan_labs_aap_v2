@@ -1,1 +1,0 @@
-{"event": "verbose", "uuid": "62f76b81-2616-43e7-aa8c-6b079ce5741b", "counter": 1, "stdout": "\u001b[1;35m[WARNING]: Unable to parse /runner/inventory/hosts as an inventory source\u001b[0m", "start_line": 0, "end_line": 1, "runner_ident": "42e2cbaa-8fdb-4565-9ae2-8c1e78686f90", "created": "2022-10-23T16:23:01.365981"}

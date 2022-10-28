@@ -1,1 +1,0 @@
-{"event": "verbose", "uuid": "ef7f0a45-8463-4e73-b463-373857890c19", "counter": 1, "stdout": "\u001b[0;31mERROR! the playbook: 1.5_add_rules_csv.yml could not be found\u001b[0m", "start_line": 0, "end_line": 1, "runner_ident": "ff716448-8370-4d37-b3e0-f42e949d2c15", "created": "2022-10-23T16:12:59.809121"}
